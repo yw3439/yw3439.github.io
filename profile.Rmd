@@ -1,0 +1,50 @@
+---
+title: "Qetsiyah's Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+# Academic Education
+
+[The Pennsylvania State University – University Park Campus](https://www.psu.edu/)
+Bachelor of Science  - May 2018      
+Major: Biochemistry and Molecular Biology                               
+
+[Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/)
+Master of Science          Major: Biostatistics 
+
+
+# Experiences
+
+China Jinmao Holdings Group Limited Internship in Human Resources Department
+
+•	Date: April/2020 - Present
+
+
+Penn State Biophysics Research Lab for Professor John Golbeck            
+
+•	Date: August/2017 - July/2019
+
+•	Directed the research project about assembling of reaction center I of Heliobacterium. modesticaldum in Rhodobacter. sphaeroides mutants through several conjugation techniques with cloned E. coli.
+
+•	Conducted students in studying and manipulating scientific researches.
+
+•	Participated in the project of publication as an undergraduate lab student. Publication: Engineered biosynthesis of bacteriochlorophyll gF in rhodobacter sphaeroides. BBA - Bioenergetics, 1859(7), 501-509.
+
+
+
+Lab Technician Summer Internship: 
+Guizhou National Research Institute of Chemical Engineering, China                    
+
+•	Date: May/2016 - July/2016
+
+•	Utilized analytic chemistry to test the purity of phosphorite.
+
+•	Synthesized high-performance nitrogenous fertilizer.
+
+# More Information
+
+See [My Resume](files/Resumes.pdf)
