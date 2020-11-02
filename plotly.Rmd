@@ -1,0 +1,86 @@
+---
+title: "Qetsiyah's Website"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+  
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(plotly)
+library(p8105.datasets)
+data("rest_inspec")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+rest_inspec %>%
+  separate(inspection_date, into = c("year", "month", "day")) %>%
+  filter(boro == "MANHATTAN") %>%
+  filter(year == "2017") %>%
+  filter(score < 28) %>%
+  count(cuisine_description) %>%
+  filter(n > 600) %>%
+  rename("count" = "n") %>%
+  mutate(
+    cuisine_description = replace(cuisine_description, 
+                                  cuisine_description == "Latin (Cuban, Dominican, Puerto Rican, South & Central American)",
+                                  "Latin"),
+    cuisine_description = fct_reorder(cuisine_description, count)
+  ) %>%
+  plot_ly(x = ~cuisine_description, y = ~count, color = ~cuisine_description, type = "bar") %>%
+  layout(title = "Restaurants with Score<28 in Manhattan in 2017")
+
+```
+
+### Chart B
+
+```{r}
+
+rest_inspec %>% 
+  separate(inspection_date, into = c("year", "month", "day")) %>%
+  filter(boro == "MANHATTAN") %>%
+  filter(year == "2017") %>%
+  filter(score < 28) %>%
+  mutate(
+    cuisine_description = replace(cuisine_description, 
+                                  cuisine_description == "Latin (Cuban, Dominican, Puerto Rican, South & Central American)",
+                                  "Latin")
+  ) %>%
+  filter(cuisine_description == "American"|cuisine_description == "Chinese"|cuisine_description == "CafÃ©/Coffee/Tea"|
+           cuisine_description == "Pizza"|cuisine_description == "Italian"|cuisine_description == "Latin"|
+           cuisine_description == "Mexican"|cuisine_description == "Japanese"|cuisine_description == "French" |
+           cuisine_description == "Bakery") %>%
+  mutate(
+    cuisine_description = fct_relevel(cuisine_description, c("Latin", "French", "Bakery", "Mexican","Pizza", "Japanese",
+                                                             "Chinese",  "Italian", "CafÃ©/Coffee/Tea", "American"))
+  ) %>%
+  plot_ly(y = ~ score, color = ~cuisine_description, type = "box") %>%
+  layout(title = "Average Score<28 in Manhattan in 2017")
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart C
+
+```{r}
+
+rest_inspec %>% 
+  count(grade) %>%
+  drop_na() %>%
+  plot_ly(labels = ~ grade, values = ~n, type = "pie", textposition = 'outside', textinfo = 'label+percent') %>%
+  layout(title = "Proportion of Inspection Grade for restaurants",
+         autosize = F, width = 600, height = 400)
+
+```
