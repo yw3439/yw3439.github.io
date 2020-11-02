@@ -1,0 +1,39 @@
+---
+title: "Qetsiyah's Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+---
+
+Welcome to Qestiyah Wang's Website
+
+![](files/main_image.JPG)
+
+# My Life in China
+
+Qetsiyah's Hometwon - [Guiyang](https://www.youtube.com/watch?v=eL0zVXn3iK8), Guizhou, China
+
+Qetsiyah's High School - Guiyang No.1 High School![](files/highschool.jpeg)
+
+# My Life in US
+
+Qetsiyah's Undergraduate - The Pennsylvania State University![](files/psu.JPG)
+
+Qetsiyah's Graduate - Columbia University![](files/columbia.jpg)
+
+# My Belief
+
+Ge Nie in Qin's Moon![](files/genie.JPG)
+
+# More Info
+
+Click [Here](files/resumes.pdf)
+
+
+
+
+
+
+
