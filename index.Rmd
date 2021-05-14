@@ -25,7 +25,7 @@ Qetsiyah's Graduate - Columbia University![](files/columbia.jpg)
 
 # More Info
 
-Click [Here](files/Resumes.pdf)
+Click [Here](profile.html)
 
 
 

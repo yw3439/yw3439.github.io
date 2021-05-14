@@ -59,4 +59,4 @@ Major: Biostatistics
 
 # More Information
 
-See [My Resume](files/Resumes.pdf)
+See [My Resume](files/resumes.pdf)
