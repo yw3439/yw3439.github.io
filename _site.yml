@@ -5,8 +5,8 @@ navbar:
   right:
     - text: "Profile"
       href: profile.html
-    - text: "Plotly"
-      href: plotly.html
+    - text: "Projects"
+      href: projects.html
     - icon: fa-envelope fa-lg
       href: mailto:<yw3439@cumc.columbia.com>
     - icon: fa-github fa-lg

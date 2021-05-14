@@ -1,30 +1,52 @@
 ---
-title: "projects"
-author: "Qetsiyah Wang"
-date: "5/14/2021"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Data Analysis
 
-## R Markdown
+### Regression Analysis for Hate Crime Rate
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+• [Report](files/report_regression.html)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Regression Analysis for Individual Health Insurance Forcast
 
-```{r cars}
-summary(cars)
-```
+• [Report](files/fin.report.pdf)
 
-## Including Plots
+### Compare Variable Selection Methods (Lasso and Stepwise)
 
-You can also embed plots, for example:
+• [Report](files/General_presentation.pptx)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+### E-M Algorithm (CLustering) Single Cell Gene Expressions
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+• [Report](files/Stat_Comp_Proj2_REPORT.pdf)
+
+• [Presentation](files/Stat_Comp_Project__2.pdf)
+
+### Hierarchiacl Bayesian Model for Hurricane Trajectories
+
+• [Report](files/report_update.pdf)
+
+• [Presentation](files/bayesian.pptx)
+
+
+# Epidemiology
+
+#### Clinical and epidemiological features of 36 children with COVID-19
+
+• [Report](files/Epid6400.pptx)
+
+
+# Molecular Medicine
+
+#### A Unifying Genetic Model for Facioscapulohumeral Muscular Dystrophy
+
+• [Report](files/464.pptx)
+
+
+
+
+
