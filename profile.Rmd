@@ -1,5 +1,4 @@
 ---
-title: "Qetsiyah's Website"
 output: 
   html_document:
     toc: true
